@@ -523,7 +523,7 @@ public:
     
     
     
-    vector<Move> squareMoves(Square square, bool mustCapture) {
+    vector<Move> squareMoves(Square square, bool & mustCapture) {
         
         vector<Move> moves;
         vector<Atom> captures = findCaptures(square);
